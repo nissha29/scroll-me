@@ -1,20 +1,15 @@
 /* eslint-disable react/prop-types */
 
 import { useNavigate } from "react-router-dom"
-import UserInfo from "./UserInfo"
 
-function ShowUsers({name,username}) {
+function ShowUsers({name}) {
   let navigate = useNavigate()
   return (
-    <div>
+    <div className="bg-red-300">
       <div 
-        onClick={ () => navigate(`/users/${username}`)}
+        onClick={ () => navigate(`/users/${name}`)}
         className="text-[#000] hover:cursor-pointer">{name}
       </div>
-      <UserInfo 
-         pName={name}
-         pUsername={username}  
-      />
     </div>
   )
 }

@@ -14,8 +14,9 @@ function Routing() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/users" element={<Users />}/>
-            <Route path="/users/:id" element={< UserInfo/>}/>
+            <Route path="/users" element={<Users />}>
+                <Route path="/users/:id" element={< UserInfo/>}/>
+            </Route>
         </Routes>
     </div>
   )
