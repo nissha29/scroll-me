@@ -29,7 +29,8 @@ function Users() {
   }
 
   return (
-    <div className="flex flex-col gap-10 justify-center mt-40">
+    <div className="flex flex-col gap-10 justify-center mt-10">
+      <div className="text-[90px] flex justify-center items-center playwrite">Users</div>
       <div className="flex justify-center items-center mt-5 gap-4">
         <input 
           onChange={ (event) => {
